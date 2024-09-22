@@ -1,0 +1,23 @@
+.header {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 100vw; 
+    height: 150px;
+    box-sizing: border-box;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+  }
