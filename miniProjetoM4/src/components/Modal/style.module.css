@@ -11,6 +11,8 @@
     z-index: 1000; 
 }
 
+
+
 .modalContent {
     background-color: white; 
     color: black;
@@ -20,10 +22,38 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.close {
-    cursor: pointer; 
-    float: right; 
-    font-size: 24px; 
+
+.headerModal{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#closeModalButton {
+    display: flex;
+    border-radius: 40%;
+    background-color: transparent;
+    outline: none;
+}
+
+#closeModalButton:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.submitModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitModal input{
+    margin-top: 2vw;
+    border-radius: 15px;
+    width: 10vw;
+    background-color: black;
+}
+
+.submitModal input:hover{
+    background-color:gray;
 }
 
 form {
@@ -50,3 +80,4 @@ button {
 button:hover {
     background-color: #0056b3; 
 }
+

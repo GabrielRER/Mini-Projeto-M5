@@ -58,6 +58,17 @@
     margin-left: 3vw;
 }
 
+.headerAddModal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+
+.taskAddForm input{
+    margin-top: 10px;
+}
+
 @media (max-width: 480px) {
     .container {
       max-width: 90vw;

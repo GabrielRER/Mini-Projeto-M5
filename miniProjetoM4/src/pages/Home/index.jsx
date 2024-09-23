@@ -7,6 +7,8 @@ import pencilIcon from "../../assets/pencil.png";
 import loupeIcon from "../../assets/loupe.png";
 import GetForm from "./components/GetForm/index.jsx";
 import Modal from "../../components/Modal/index.jsx";
+import closeIcon from "../../assets/close-button.png";
+
 function Home() {
 
     const [openModal, setOpenModal] = useState(false);
@@ -50,8 +52,21 @@ function Home() {
 
     <GetForm/>
 
-    <Modal isOpen={openModal}>
-        <h1>oi</h1>
+    <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+        <div className={style.headerAddModal}>
+            <h2>Adicionar Tarefa</h2>
+           
+        </div>
+        
+
+        <form className={style.taskAddForm}>
+            <h3>Digite a tarefa: </h3>
+            <input></input>
+            <h3>Digite o prazo: </h3>
+            <input type="date"></input>
+            <h3>Digite um marcador: </h3>
+            <input></input>
+        </form>
     </Modal>
 
     </>

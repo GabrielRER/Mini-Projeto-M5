@@ -3,7 +3,7 @@ import style from "./style.module.css";
 
  function CardAPI(props) {
 
-    const [verifyButton, setVerifyButton ] = useState();
+    const [isChecked, setIsChecked ] = useState();
 
     const handleCheckboxChange = (e) => {
         setIsChecked(e.target.checked);
