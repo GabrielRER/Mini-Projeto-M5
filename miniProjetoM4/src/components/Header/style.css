@@ -8,8 +8,8 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: auto; /* Remova a altura fixa */
-    min-height: 25vh; /* Use uma altura mínima para telas maiores */
+    height: auto; 
+    min-height: 25vh; 
     position: relative;
 }
 
@@ -19,13 +19,12 @@
     margin: 0;
 }
 
-/* Media query para ajustar a altura no mobile */
 @media (max-width: 768px) {
     .header {
-        min-height: 35vh; /* Aumenta a altura mínima em telas menores */
+        min-height: 35vh; 
     }
 
     .header h1 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+        font-size: 1.5rem; 
     }
 }

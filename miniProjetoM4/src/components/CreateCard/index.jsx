@@ -3,16 +3,30 @@ import style from "./style.module.css";
 
  function CardAPI(props) {
 
+    const [verifyButton, setVerifyButton ] = useState();
+
+    const handleCheckboxChange = (e) => {
+        setIsChecked(e.target.checked);
+      };
+
+
   return (
     <>
       <main>
         <div className={style.card}>
           <h1>{props.task}</h1>
           <div className="infos">
-            <p className="firstInfo">{props.deadline}</p>
-            <p className="secondInfo">{props.tag}</p>
+            <h3 className="firstInfo">Data Final: {props.deadline}</h3>
+            <h3 className="secondInfo">Tag: {props.tag}</h3>
+            {props.done === true &&
+                <h3 className="secondInfo">Concluído: Sim</h3>
+            }
+            {props.done !== true &&
+                <h3 className="secondInfo">Concluído: Não</h3>
+            }
           </div>
         </div>
+        <input className={style.btnCard} type="checkbox" checked={props.done} onChange={handleCheckboxChange}></input>
       </main>
     </>
   )

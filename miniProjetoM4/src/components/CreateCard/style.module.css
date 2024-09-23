@@ -1,11 +1,12 @@
 main{
     display: flex;
     flex-flow: row wrap;
+    border: solid black 3px;
 }
 
 .card{
     width: 100vw;
-    height: 300px;
+    height: 30vh;
     background-color:#FFFF66;
     display: flex;
     align-items: center;
@@ -16,4 +17,12 @@ main{
 .infos{
     display: flex;
     gap: 15px;
+}
+
+.btnCard {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items:flex-end;
+    margin-left: auto;
 }

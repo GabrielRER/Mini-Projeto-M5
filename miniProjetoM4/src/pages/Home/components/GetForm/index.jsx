@@ -27,7 +27,7 @@ function GetForm() {
             <ul>
                 {items.map((item) => (
                     <li key={item.id}>
-                        <CardAPI task={item.task} deadline={item.deadline} tag={item.tag}/>
+                        <CardAPI task={item.task} deadline={item.deadline} tag={item.tag} done={item.done}/>
                     </li>
                 ))}
             </ul>

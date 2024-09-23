@@ -80,7 +80,7 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   .header {
-      min-height: 30vh; /* Ajusta a altura mínima para dispositivos menores */
+      min-height: 30vh; 
   }
 
   .header h1 {
@@ -90,7 +90,7 @@ button:focus-visible {
 
 @media (max-width: 480px) {
   .header {
-      min-height: 20vh; /* Aumenta a altura no mobile */
+      min-height: 20vh; 
   }
 
   .container {
