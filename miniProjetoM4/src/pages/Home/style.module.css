@@ -1,3 +1,12 @@
+
+.container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .buttonContainer {
     display: flex;
     align-items: center;
@@ -9,9 +18,37 @@
     gap: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    
 }
 
 .btnList {
     margin: 15px;
 }
+
+.searchBox{
+    margin-left: 30%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.inputSearchBox {
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.searchBox h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.searchButton {
+    list-style: none;
+    margin: 15px;
+}
+
