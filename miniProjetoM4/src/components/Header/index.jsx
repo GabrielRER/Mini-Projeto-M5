@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'; 
 
-const Header = () => {
+function Header () {
   return (
     <header className="header">
       <h1>Lista de Tarefas</h1>
