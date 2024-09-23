@@ -19,9 +19,6 @@ function Modal(props) {
             
                 {props.children}
 
-                <section className= {style.submitModal}>
-                    <input type="submit"></input>    
-                </section>  
             </div>
         </div>
     )
