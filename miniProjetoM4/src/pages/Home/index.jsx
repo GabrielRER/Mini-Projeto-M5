@@ -5,11 +5,13 @@ import addIcon from "../../assets/add.png";
 import trashIcon from "../../assets/trashicon.png";
 import pencilIcon from "../../assets/pencil.png";
 import loupeIcon from "../../assets/loupe.png";
+import GetForm from "./components/GetForm/index.jsx";
 
 function Home() {
 
 
   return (
+    <>
     <div className={style.container}>
 
     <div className={style.buttonContainer}> 
@@ -21,20 +23,28 @@ function Home() {
     </ul>
 
     </div>
+    
 
-    <div className={style.searchBox}>
+    <div className={style.searchContainer}>
 
+        <div className={style.searchBar}>
         <h3>Pesquise uma tarefa:</h3>
         <input className={style.inputSearchBox}></input>
+        </div>
         
         
+
     </div>
 
     <ul className={style.searchButton}>
         <li><ListButton image={loupeIcon} alt={"loupeIcon"}/></li>
-    </ul>
+        </ul>
 
     </div>
+
+    <GetForm/>
+
+    </>
   )
 }
 

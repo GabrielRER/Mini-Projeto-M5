@@ -4,7 +4,8 @@
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vh;
+    margin-top: 10vh;
 }
 
 .buttonContainer {
@@ -22,26 +23,31 @@
 }
 
 .btnList {
-    margin: 15px;
+    margin: 1vw;
 }
 
-.searchBox{
+.searchContainer{
     margin-left: 30%;
     width: 40vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-bottom: 5vh;
 }
 
+.searchBar {
+    display: flex;
+    flex-direction: column;
+}
+
 .inputSearchBox {
-    width: 400px;
-    height: 50px;
+    width: 35vw;
+    height: 8vh;
     border-radius: 20px;
     margin-top: 10px;
 }
 
-.searchBox h3{
+.searchContainer h3{
     font-size: 30px;
     text-align: center;
     margin: 0;
@@ -49,6 +55,34 @@
 
 .searchButton {
     list-style: none;
-    margin: 15px;
+    margin-left: 3vw;
 }
 
+@media (max-width: 480px) {
+    .container {
+      max-width: 90vw;
+      flex-direction: column;
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+
+    .searchContainer{
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .inputSearchBox {
+        width: 80vw;
+    }
+
+    .searchButton {
+        margin-left: 0;
+    }
+
+
+    
+  
+  }

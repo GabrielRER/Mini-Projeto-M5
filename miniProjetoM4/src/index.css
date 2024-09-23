@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -28,6 +31,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -65,5 +75,29 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+      min-height: 30vh; /* Ajusta a altura mínima para dispositivos menores */
+  }
+
+  .header h1 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      min-height: 20vh; /* Aumenta a altura no mobile */
+  }
+
+  .container {
+    min-width: 40vw;
+  }
+
+  .header h1 {
+      font-size: 1.2rem;
   }
 }
